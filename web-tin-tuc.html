@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Tin Tức</title>
+    <link rel="icon" href="z3871671167727_ab87656427d41152d0fca56289f72850.jpg" type="image/gif" />
+    <script src="https://kit.fontawesome.com/acf634688a.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0 auto;
+    }
+.logo{
+    width: 150px;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.search{
+   padding-left: 500px; 
+   padding-top: 50px;
+}
+input{
+    width: 500px;
+}
+a{
+text-decoration: none;
+color: #000;
+}
+a:hover{
+    color:red;
+}
+nav ul li{
+    display: inline;
+    padding: 16px;
+    font-size: 15px;
+    border-bottom:solid rgb(83, 183, 229);
+    float: left;
+}
+.img1{
+    float: left;
+    display:inline;
+    padding-bottom: 10px;
+    width: 500px;
+}
+.news1{
+    width: 750px;
+}
+#word1{
+    background-color: red;
+}
+.news1>h2{
+    float: right;
+}
+.imge img{
+    width: 300px;
+    height: 200px;
+    padding: 50px 20px 0 0;
+}
+.imge{
+    float: right;
+}
+section{
+    float: right;
+    width: 300px;
+}
+section ul li{
+    padding: 5px;
+    font-size: 20px;
+    border-bottom:1px solid #000;
+    float: left;
+    margin-top: 10px;
+}
+section h1{
+text-align: center;
+border-bottom:solid  rgb(83, 183, 229);
+}
+main{
+    display: inline-block;
+}
+ul{
+    list-style-type:circle;
+}
+.box1, .box2, .box3{
+    float: left;
+    padding-right: 10px;
+}
+.box img{
+    width: 340px;
+    height: 200px;
+}
+body{
+        width: 1375px;
+    }
+</style>
+<script>
+    var index = 1;
+    chageImage = function(){
+        var imgs = ["th.jpg","th (1).jpg","th (2).jpg","th (3).jpg"];
+        document.getElementById('img').src = imgs[index];
+        index++;
+        if(index==4){
+            index=0;
+        }
+    }
+        setInterval(chageImage,1000);
+ </script>
+<body>
+    <header>
+    <img class ="logo" src="Screenshot 2023-04-18 182129.png" alt="logo">
+    <div class="search">
+    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <input  placeholder="Tìm kiếm" type="search" >
+    <div class="clear"></div>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #204dd5;"></i></a></li>
+            <li><a href="#">Thời sự</a></li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Kinh tế</a></li>
+            <li><a href="#">Đời sống</a></li>
+            <li><a href="#">Sức khỏe</a></li>
+            <li><a href="#">Giới trẻ</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Du lịch</a></li>
+            <li><a href="#">Văn hóa</a></li>
+            <li><a href="#">Giải trí</a></li>
+            <li><a href="#">Thể thao</a></li>
+            <li><a href="#">Công nghệ-Game</a></li>
+            <li><a href="#">Xe</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Tiêu dùng</a></li>
+            <li class="contact"><a href="http://127.0.0.1:5500/trang%20c%C3%A1%20nh%C3%A2n1%20.html"><i><b>Liên hệ</b></i></a></li>
+        </ul>
+    </nav>
+    <main>
+         <div class="news1"><a href="https://vnexpress.net/xe-container-un-u-2-km-o-cua-khau-quoc-te-la-lay-4595031.html">
+            <img class ="img1" src="Screenshot 2023-04-27 110135.png" alt="Dường xe container">
+            <div class="word1">
+                <h2>Xe container ùn ứ 2 km ở cửa khẩu quốc tế La Lay</h2>
+                <p><strong>QUẢNG TRỊ-</strong>Đường dẫn vào cửa khẩu, bãi kiểm tra hàng hóa xuất nhập khẩu đang dở khiến xe đầu kéo ún ừ dài 2 km ở cửa khẩu quốc tế La Lay.</p>
+            </div></a>
+         </div>
+    </main>
+    <section>
+        <a href="#"><h1>Tin mới</h1></a>
+        <ul>
+            <li><a href="#">Giả mạo giấy chuyển khoản để "sống ảo", lừa đảo.</a></li>
+            <li><a href="#">Vụ giao đất làm du lịch nhưng chỉ nuôi tôm: Cưỡng chế, thu hồi đất.</a></li>
+            <li><a href="#">Phương tây gọi FaceTime để hướng dẫn binh sĩ Ukraine?</a></li>
+            <li><a href="#">Tòa trả hồ sơ vụ cựu nữ trưởng phòng Sở Tư pháp Lâm Đồng lừa đảo.</a></li>
+            <li><a href="#">SEA Game 32: U.22 Malaysia chờ đợi ẩn số từ cầu thủ người Scotland.</a></li>
+            <li><a href="#">4 anh hào tranh nhau ngôi vô địch giải U.19</a></li>
+        </ul>
+    </section>
+    <div class="imge">
+        <img id="img" onclick="chageImage()" src="th.jpg" alt="ảnh">
+    </div>
+    <div class="box">
+        <div class="box1"><a href="https://vnexpress.net/cuon-thep-ui-bay-cabin-xe-dau-keo-4594893.html">
+            <img src="Screenshot 2023-04-27 110157.png" alt="tai nạn">
+            <h3>Cuộn thép ủi bay cabin xe đầu kéo</h3></a>
+        </div>
+        <div class="box2"><a href="https://vnexpress.net/bi-thu-tp-hcm-giam-sat-38-du-an-giup-sang-loc-thay-the-can-bo-4594898.html">
+            <img src="Screenshot 2023-04-27 110211.png" alt="ông bí thư TP HCM">
+            <h3>Bí thư TP HCM: Giám sát 38 dự án giúp<br> sàng lọc, thay thế cán bộ.</h3></a>
+        </div>
+        <div class="box3"><a href="https://vnexpress.net/244-ty-dong-nang-chieu-cao-hai-cau-cua-ngo-tp-hcm-4594860.html">
+            <img src="ca-u-bi-nh-trie-u-1-jpg-3755-1-1609-5436-1681792727.jpg" alt="cầu cửa ngõ">
+            <h3>244 tỷ đồng nâng chiều cao hai cầu cửa ngõ<br> TP HCM.</h3></a>
+        </div>
+    </div>
+</body>
